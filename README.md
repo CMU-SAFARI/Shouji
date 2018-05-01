@@ -1,2 +1,8 @@
 # SLIDER
 SLIDER: A New Highly Parallel and Accurate Pre-Alignment Filter for Accelerating Pairwise Sequence Alignment
+
+## Motivation:
+Today’s massive amount of sequencing data raises alarm as it continues to overwhelm the processing capacity of existing algorithms and compute infrastructures. In this work, we explore the use of hardware acceleration to slash the execution time of short sequence alignment, a crucial step in analyzing sequenced genomes, from hours to mere seconds. We introduce SLIDER, a highly parallel and accurate pre-alignment filter that remarkably reduces the need for the computationally costly dynamic programming algorithms.
+## Results: 
+SLIDER significantly improves the accuracy of pre-alignment filtering by up to an order of magnitude compared to the best performing previous filter, GateKeeper. We also propose a hardware accelerator design that adopts modern FPGA (field-programmable gate array) architecture to further boost the performance of our algorithm. Our accelerator is, on average, three orders of magnitude faster than the equivalent C implementation of SLIDER. Using a single FPGA chip, we benchmark the benefits of integrating SLIDER with four state-of-the-art sequence aligners, designed for different computing platforms. The addition of SLIDER as a pre-alignment step can reduce the alignment time of the state-of-the-art aligners by one to two orders of magnitude. SLIDER can be adopted for any bioinformatics pipeline that performs sequence alignment for verification. Unlike most existing acceleration works, SLIDER does not sacrifice any of the aligner capabilities, as it does not modify or replace the alignment step.
+
