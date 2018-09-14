@@ -26,6 +26,7 @@ Threshold
 
 ## Output [DebugMode ON]:
 ```
+./main 1 4 100 /home/alser-xilinx/Desktop/Filters_29_11_2016/ERR240727_1_E3_30million.txt 1
 Edit Distance 	 CPU Time(seconds) 	 Alignment_Needed 	 Not_Needed 
 Threshold 
  0 		 0.0000 	          0 	 1
