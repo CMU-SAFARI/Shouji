@@ -7,6 +7,7 @@ gcc -g -O3 -Wall -o main *.c -lz -lm
 ```
 
 ## Output [DebugMode OFF]:
+```
 ./main 0 4 100 /home/alser-xilinx/Desktop/Filters_29_11_2016/ERR240727_1_E3_30million.txt 30000
 Edit Distance 	 CPU Time(seconds) 	 Alignment_Needed 	 Not_Needed 
 Threshold 
@@ -21,8 +22,10 @@ Threshold
  8 		 0.4772 	      18101 	 11899
  9 		 0.5406 	      23382 	 6618
  10 		 0.5928 	      25483 	 4517
+```
 
 ## Output [DebugMode ON]:
+```
 Edit Distance 	 CPU Time(seconds) 	 Alignment_Needed 	 Not_Needed 
 Threshold 
  0 		 0.0000 	          0 	 1
@@ -7368,3 +7371,5 @@ The selected seed is: 1000
 0000011000100000100000100000000000001000100011001000001000000000000000000000001001000101011011011111
 _________________________________________________________________________________****_______________
  10 		 0.0021 	          0 	 1
+ 
+ ```
