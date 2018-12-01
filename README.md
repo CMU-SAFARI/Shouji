@@ -11,4 +11,4 @@ Shōji significantly improves the accuracy of pre-alignment filtering by up to t
 Shōji is based on two key ideas: (1) A new filtering algorithm that remarkably accelerates the computation of the banded optimal alignment by rapidly excluding dissimilar sequences from the opti-mal alignment calculation. (2) Judicious use of the parallelism-friendly architecture of modern FPGAs to greatly speed up this new filtering algorithm.
 
 ## Key Mechanism:
-![alt text](https://github.com/BilkentCompGen/Shōji/blob/master/Figure1-GitHub.png)
+![alt text](https://github.com/BilkentCompGen/Shoji/blob/master/Figure1-GitHub.png)
