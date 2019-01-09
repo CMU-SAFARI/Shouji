@@ -121,7 +121,7 @@ int main(int argc, const char * const argv[]) {
 			}		  
 
 			begin1 = clock();
-			Accepted1 = SLIDER(ReadLength, RefSeq, ReadSeq, ErrorThreshold, GridSize, DebugMode);
+			Accepted1 = Shouji(ReadLength, RefSeq, ReadSeq, ErrorThreshold, GridSize, DebugMode);
 			/*if (Accepted1==1){
 				EdlibAlignResult resultEdlib1 = edlibAlign(RefSeq, ReadLength, ReadSeq, ReadLength, edlibNewAlignConfig(-1, EDLIB_MODE_NW, EDLIB_TASK_PATH, NULL, 0)); // with alignment
 				edlibFreeAlignResult(resultEdlib1);

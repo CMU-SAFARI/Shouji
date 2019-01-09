@@ -36,17 +36,17 @@
 
 
 
-#ifndef __MAIN_H__
-#define __MAIN_H__
+#ifndef __SHOUJI_H__
+#define __SHOUJI_H__
+
+
 
 /* Include Files */
 #include <stddef.h>
 #include <stdlib.h>
 #include <string.h>
-#include "Shouji.h"
 
 /* Function Declarations */
-extern int main(int argc, const char * const argv[]);
+extern int Shouji(int ReadLength, const char RefSeq[], const char ReadSeq[], int ErrorThreshold, int GridSize, int DebugMode);
 
 #endif
-
