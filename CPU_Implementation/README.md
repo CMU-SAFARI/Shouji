@@ -1,7 +1,7 @@
 ## Instructions:
 
 ```
-gcc -g -O3 -Wall -o main *.c -lz -lm 
+make
 ./main 0 4 100 ../Datasets/ERR240727_1_E3_30million.txt 3000000 
 ./main [DebugMode] [GridSize] [ReadLength] [ReadFile] [# of reads]
 ```
