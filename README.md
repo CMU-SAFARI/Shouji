@@ -15,3 +15,40 @@ Shōji is based on two key ideas: (1) A new filtering algorithm that remarkably 
 ![alt text](https://github.com/BilkentCompGen/Shoji/blob/master/Figure1-GitHub.png)
 
 * Named after a traditional Japanese door that is designed to slide open [http://www.aisf.or.jp/~jaanus/deta/s/shouji.htm].
+
+Shouji Directory Structure:
+
+├───CPU_Implementation
+├───Datasets
+└───Hardware_Accelerator
+    └───SLIDER_VC709
+        ├───SLIDER.ip_user_files
+        │   ├───ip
+        │   │   ├───SLIDER_fifo
+        │   │   └───SLIDER_pe_fifo
+        │   ├───ipstatic
+        │   │   └───fifo_generator_v13_0_1
+        │   │       ├───hdl
+        │   │       └───simulation
+        │   └───sim_scripts
+        │       ├───SLIDER_fifo
+        │       │   ├───ies
+        │       │   ├───modelsim
+        │       │   ├───questa
+        │       │   ├───vcs
+        │       │   └───xsim
+        │       └───SLIDER_pe_fifo
+        │           ├───ies
+        │           ├───modelsim
+        │           ├───questa
+        │           ├───vcs
+        │           └───xsim
+        └───SLIDER.srcs
+            ├───constrs_1
+            │   └───new
+            ├───sim_1
+            │   ├───imports
+            │   │   ├───new
+            │   │   └───riffa
+            │   └───new
+            └───sources_1
