@@ -2,13 +2,13 @@
 
 ```
 gcc -g -O3 -Wall -o main *.c -lz -lm 
-./main 0 4 100 /home/alser-xilinx/Desktop/Filters_29_11_2016/ERR240727_1_E3_30million.txt 3000000 
+./main 0 4 100 ../Datasets/ERR240727_1_E3_30million.txt 3000000 
 ./main [DebugMode] [GridSize] [ReadLength] [ReadFile] [# of reads]
 ```
 
 ## Output [DebugMode OFF]:
 ```
-./main 0 4 100 /home/alser-xilinx/Desktop/Filters_29_11_2016/ERR240727_1_E3_30million.txt 30000
+./main 0 4 100 ../Datasets/ERR240727_1_E3_30million.txt 30000
 Edit Distance 	 CPU Time(seconds) 	 Alignment_Needed 	 Not_Needed 
 Threshold 
  0 		 0.0223 	         13 	 29987
@@ -26,7 +26,7 @@ Threshold
 
 ## Output [DebugMode ON]:
 ```
-./main 1 4 100 /home/alser-xilinx/Desktop/Filters_29_11_2016/ERR240727_1_E3_30million.txt 1
+./main 1 4 100 ../Datasets/ERR240727_1_E3_30million.txt 1
 Edit Distance 	 CPU Time(seconds) 	 Alignment_Needed 	 Not_Needed 
 Threshold 
  0 		 0.0000 	          0 	 1
