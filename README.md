@@ -1,4 +1,4 @@
-# Shouji*: Fast and Efficient Computation of Banded Sequence Alignment
+# Shouji: Fast and Efficient Computation of Banded Sequence Alignment
 Shouji is the fastest and most accurate pre-alignment filter. It is named after a traditional Japanese door that is designed to slide open [http://www.aisf.or.jp/~jaanus/deta/s/shouji.htm].
 
 ## Motivation:
