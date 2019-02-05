@@ -21,8 +21,12 @@ printf("\t%s\n", _tmpSeq);
 ./mrfast-2.6.1.0/mrfast --search ../human_g1k_v37.fasta --seq ../ERR240727_1.filt.fastq -e 2 | awk -F'\t' '{ if (substr($2,1,1) ~ /^[A,C,G,T]/ ) print $0}' |head -n 30000000 > ../../ERR240727_1_E1_50million_new2.txt
 ```
 
-You can download the human reference genome from here: ftp://ftp.ncbi.nlm.nih.gov/1000genomes/ftp/technical/reference/human_g1k_v37.fasta.gz
+You can download the human reference genome from here: 
+```
+ftp://ftp.ncbi.nlm.nih.gov/1000genomes/ftp/technical/reference/human_g1k_v37.fasta.gz
+```
 Or a more recent assembly from here:
+```
 https://www.ncbi.nlm.nih.gov/assembly?term=GRCh38&cmd=DetailsSearch
-
+```
 Above, we only provide sample of the 4 read-reference sets generated from Illumina 100 bp reads. 
