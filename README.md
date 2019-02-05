@@ -19,10 +19,10 @@ Shouji is based on two key ideas: (1) A new filtering algorithm that remarkably 
 ## Shouji Directory Structure:
 ```
 Shouji-master
-├───(1.) CPU_Implementation
-├───(2.) Datasets
-└───(3.) Hardware_Accelerator
-    └───(4.) Shouji_VC709
+├───1. CPU_Implementation
+├───2. Datasets
+└───3. Hardware_Accelerator
+    └───4. Shouji_VC709
 ```            
 1. In the "CPU_Implementation" directory, you will find all the source code of the CPU implementation of Shouji. Follow the instructions provided in the README.md inside the directory to compile and execute the program. We also provide an example of how the output of Shouji looks like using both verbose mode and silent mode.
 2. In the "Datasets" directory, you will find four sample datasets that you can start with. You will also find details on how to obtain the other datasets that we used in our evaluation, so that you can reproduce the exact same experimental results.
