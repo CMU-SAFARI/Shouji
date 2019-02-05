@@ -18,6 +18,7 @@ Shouji is based on two key ideas: (1) A new filtering algorithm that remarkably 
 
 ## Shouji Directory Structure:
 ```
+Shouji-master
 ├───(1) CPU_Implementation
 ├───(2) Datasets
 └───(3) Hardware_Accelerator
