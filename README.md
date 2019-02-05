@@ -14,8 +14,6 @@ Shouji is based on two key ideas: (1) A new filtering algorithm that remarkably 
 ## Key Mechanism:
 ![alt text](https://github.com/BilkentCompGen/Shoji/blob/master/Figure1-GitHub.png)
 
-* Named after a traditional Japanese door that is designed to slide open [http://www.aisf.or.jp/~jaanus/deta/s/shouji.htm].
-
 ## Shouji Directory Structure:
 ```
 Shouji-master
@@ -27,3 +25,6 @@ Shouji-master
 1. In the "CPU_Implementation" directory, you will find all the source code of the CPU implementation of Shouji. Follow the instructions provided in the README.md inside the directory to compile and execute the program. We also provide an example of how the output of Shouji looks like using both verbose mode and silent mode.
 2. In the "Datasets" directory, you will find four sample datasets that you can start with. You will also find details on how to obtain the other datasets that we used in our evaluation, so that you can reproduce the exact same experimental results.
 3. In the "Hardware_Accelerator" directory, you will find all the design files (in 4.) and host application that are needed to run Shouji on an FPGA board. You will find details on how to synthesize the design and program the FPGA chip.
+
+
+* Named after a traditional Japanese door that is designed to slide open [http://www.aisf.or.jp/~jaanus/deta/s/shouji.htm].
