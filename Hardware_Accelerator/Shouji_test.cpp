@@ -21,7 +21,7 @@ const uint NUM_REFS = 8; // first NUM_REFS reads of each stream are used
                          // as reference dna reads
 
 const uint NUM_RIFFA_CHANNELS = 1; // multiple channels are currently not supported. 
-                                   // See doSLIDER().
+                                   // See doShouji().
 thread collector_threads[NUM_RIFFA_CHANNELS];
 
 void createWriteBuffer(){
@@ -56,7 +56,7 @@ void sendDataToFPGA(void* data, const uint size, const uint ch){
 
 // TODO: To run with more than one RIFFA channels, we should send the reference reads
 // to each channel separately.
-void doSLIDER(){
+void doShouji(){
     
     //start sender threads, send data pointer, data size, and channel as arguments
     thread sender_threads[NUM_RIFFA_CHANNELS];
@@ -115,9 +115,9 @@ void initCollectors(){
 }
 
 void printHelp(){
-    cout << "A sample application that tests SLIDER implementation on FPGA" << endl;
-	cout << "Usage: 1) ./SLIDER_test [INPUT_SIZE_IN_BYTES] [OUTPUT_FILE_NAME]" << endl; 
-	cout << "	2) ./SLIDER_test [INPUT_FILE_NAME] [OUTPUT_FILE_NAME]" << endl; 
+    cout << "A sample application that tests Shouji implementation on FPGA" << endl;
+	cout << "Usage: 1) ./Shouji_test [INPUT_SIZE_IN_BYTES] [OUTPUT_FILE_NAME]" << endl; 
+	cout << "	2) ./Shouji_test [INPUT_FILE_NAME] [OUTPUT_FILE_NAME]" << endl; 
     cout << "The size argument should be a positive integer!" << endl;
 }
 
@@ -255,7 +255,7 @@ int main(int argc, char* argv[]){
 
     return 0;*/
 
-    printf("Starting SLIDER Test with %d bytes! \n", dna_size);
+    printf("Starting Shouji Test with %d bytes! \n", dna_size);
 
     createReadBuffer();
     initFiles(argv[2]);
@@ -263,7 +263,7 @@ int main(int argc, char* argv[]){
 
     //start timer
     auto start = chrono::high_resolution_clock::now();
-	doSLIDER();
+	doShouji();
 
     //wait until the results are received from FPGA
     for(uint i = 0; i < NUM_RIFFA_CHANNELS; i++){
