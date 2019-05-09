@@ -1,6 +1,9 @@
 # Shouji: fast and efficient computation of banded sequence alignment
 Shouji is the fastest and most accurate pre-alignment filter for banded edit distance and sequence alignment calculation. It is named after a traditional Japanese door that is designed to slide open [http://www.aisf.or.jp/~jaanus/deta/s/shouji.htm].
 
+## Citation:
+Mohammed Alser, Hasan Hassan, Akash Kumar, Onur Mutlu, Can Alkan, Shouji: a fast and efficient pre-alignment filter for sequence alignment, Bioinformatics, 2019 [https://doi.org/10.1093/bioinformatics/btz234]
+
 ## Motivation:
 The ability to generate massive amounts of sequencing data continues to overwhelm the processing capacity of existing algorithms and compute infrastructures. In this work, we explore the use of hardware/software co-design and hardware acceleration to significantly reduce the execution time of short sequence alignment, a crucial step in analyzing sequenced genomes. **We introduce Shouji, a highly parallel and accurate pre-alignment filter that remarkably reduces the need for computationally-costly dynamic programming algorithms**. The first key idea of our proposed pre-alignment filter is to provide high filtering accuracy by correctly detecting all common subsequences shared between two given sequences. The second key idea is to design a hardware accelerator design that adopts modern FPGA (field-programmable gate array) architectures to further boost the performance of our algorithm.
 
