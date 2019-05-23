@@ -1,5 +1,5 @@
 ## Running a test:
-To run a test using SLIDER, you need to prepare the following:
+To run a test using Shouji, you need to prepare the following:
 
 1. Computer that supports PCIe Gen3 4-lane.
 2. Virtex®-7 FPGA VC709 Connectivity Kit.
@@ -7,10 +7,10 @@ To run a test using SLIDER, you need to prepare the following:
 4. Ubuntu 14.4.
 5. Genomic read dataset in ACGT format.
 6. Synthesize and implement the design.
-7. Run the host application provided in SLIDER\Hardware_Accelerator\SLIDER_test.cpp using the following command:
+7. Run the host application provided in Shouji\Hardware_Accelerator\Shouji_test.cpp using the following command:
 ```
-$ ./SLIDER_test [INPUT_SIZE_IN_BYTES] [OUTPUT_FILE_NAME]
-$ ./SLIDER_test [INPUT_FILE_NAME] [OUTPUT_FILE_NAME]
+$ ./Shouji_test [INPUT_SIZE_IN_BYTES] [OUTPUT_FILE_NAME]
+$ ./Shouji_test [INPUT_FILE_NAME] [OUTPUT_FILE_NAME]
 ```
 The size argument should be a positive integer! You can verify if your VC709 board is configured correctly and reachable through your PCIe using the following command:
 ```
